@@ -1,0 +1,108 @@
+#logo{
+	width: 170px;
+}
+#head-text{
+	font-size:20px;
+	/*color: #31708f;*/
+	color: #3c763d;
+	font-weight: 900;
+}
+#sub-head-text{
+	font-size:15px;
+	/*color: #31708f;*/
+	color: #3c763d;
+	font-weight: 600;
+}
+#search-btn{
+	pointer-events:auto !important;
+	cursor: pointer;
+}
+#nav{
+	/*background-color: #31708f !important;*/
+	background-color: #3c763d;
+	border-radius: 8px;
+}
+#nav-content{
+	padding-left: 70px;
+}
+.nav-item{
+	font-size: 18px;
+	color: #fff !important;
+	border-radius: 8px;
+
+}
+.nav-active{
+	/*background-color: #3fa0f3 !important;*/
+	background-color: #68ab69 !important;
+}
+.project-introduction {
+    padding-left: 40px;
+}
+.project-introduction-title {
+    padding-left: 10px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    font-size: 20px;
+    /* padding-bottom: 5px; */
+}
+.project-introduction-paragraph {
+    text-align: justify;
+    text-justify: inter-ideograph;
+    font-size: 15px;
+    text-indent: 2em;
+    line-height: 25px;
+    margin: 5px;
+}
+.page-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-family: Microsoft YaHei;
+}
+.panel-title {
+    font-size: 20px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+}
+.more-news a:hover, .more-notifications a:hover {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.more-news, .more-notifications {
+    float: right;
+    padding: 17px 15px 10px 15px;
+}
+.news-ul span, .notification-ul span {
+    float: right;
+}
+.news-title, .notification-title {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.news-ul a {
+    color: #005825;
+}
+.news-ul a {
+    color: #005825;
+}
+.panel-body {
+    font-size: 20px;
+    padding-bottom: 5px;
+    background-color: #F8F8FF;
+}
+.news-ul, .notification-ul {
+    padding: 0px 0px;
+}
+.news-ul li, .notification-ul li {
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.project-introduction {
+    padding-left: 40px;
+}
+.footer {
+    font-size: 13px;
+}
