@@ -13,8 +13,8 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="/robc/Public/jquery/jquery-1.11.3.min.js"></script>
     <!-- 自己的js和css -->
-    <!-- <script src="/robc/Public/myjs/"></script> -->
-    <link href="/robc/Public/mycss/index.css" rel="stylesheet">
+    <script src="/robc/Public/myjs/Index/index.js"></script>
+    <link href="/robc/Public/mycss/Index/index.css" rel="stylesheet">
 </head>
 
 <body>
@@ -52,12 +52,12 @@
 <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid" id="nav">
         <ul class="nav navbar-nav" id="nav-content">
-            <li class="active "><a href="<?php echo U('Index/index');?>" class="nav-item nav-active">首页</a></li>
-            <li><a href="<?php echo U('AboutProject/show');?>" class="nav-item">关于项目</a></li>
-            <li><a href="#" class="nav-item">研究团队</a></li>
-            <li><a href="#" class="nav-item">项目进展</a></li>
-            <li><a href="#" class="nav-item">发表文章</a></li>
-            <li><a href="#" class="nav-item">学术交流</a></li>
+            <li ><a href="<?php echo U('Index/index');?>" class="nav-item" id="nav-index">首页</a></li>
+            <li ><a href="<?php echo U('AboutProject/show');?>" class="nav-item" id="nav-aboutproject">关于项目</a></li>
+            <li class=""><a href="#" class="nav-item">研究团队</a></li>
+            <li class=""><a href="#" class="nav-item">项目进展</a></li>
+            <li class=""><a href="#" class="nav-item">发表文章</a></li>
+            <li class=""><a href="#" class="nav-item">学术交流</a></li>
         </ul>
     </div>
 </nav>
