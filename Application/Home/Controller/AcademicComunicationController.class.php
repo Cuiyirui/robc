@@ -6,6 +6,15 @@ class AcademicComunicationController extends Controller {
 	显示
 	 */
     public function show(){
+        $m=M();
+        $sql="select year from conference group by year order by year desc";
+        $years=$m->query($sql);
+        foreach ($years as $key => $value) {
+            $sql="select name from conference where year=".$value['year'];
+            $conferences[$value['year']]=$m->query($sql);
+        }
+        $this->assign('years',$years);
+        $this->assign('conferences',$conferences);
         $this->display();
     }
     /*
@@ -13,6 +22,8 @@ class AcademicComunicationController extends Controller {
      */
     public function showDetail(){
     	$itemname=$_POST["itemname"];
+        $conference=M('conference');
+        $conference->where('name=$itemname')->find();
     	$this->ajaxReturn($itemname);
     }
         //     //帖子总数，分页用

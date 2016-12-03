@@ -10,11 +10,9 @@
     $(".items").click(function(){
         var itemnameValue=$(this).text();
         var url="robc/index.php?s=/Home/AboutProject/showDetail";
-        alert(111);
         $.post(url,{
             itemname:itemnameValue
         },function(data){
-            alert(111);
             document.getElementById("detail-content").innerHTML=data;
         });
     });
