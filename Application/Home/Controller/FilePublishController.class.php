@@ -1,7 +1,7 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class AboutProjectController extends Controller {
+class FilePublishController extends Controller {
 	/*
 	显示
 	 */
@@ -9,7 +9,7 @@ class AboutProjectController extends Controller {
         $this->display();
     }
     /*
-    显示详细信息
+    显示项目详细信息
      */
     public function showDetail(){
     	$itemname=$_POST["itemname"];

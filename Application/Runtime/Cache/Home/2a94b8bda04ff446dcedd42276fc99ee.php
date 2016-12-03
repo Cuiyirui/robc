@@ -55,9 +55,9 @@
             <li ><a href="<?php echo U('Index/index');?>" class="nav-item" id="nav-index">首页</a></li>
             <li ><a href="<?php echo U('AboutProject/show');?>" class="nav-item" id="nav-aboutproject">关于项目</a></li>
             <li class=""><a href="<?php echo U('ResearchTeam/show');?>" class="nav-item" id="nav-researchteam">研究团队</a></li>
-            <li class=""><a href="#" class="nav-item">项目进展</a></li>
-            <li class=""><a href="#" class="nav-item">发表文章</a></li>
-            <li class=""><a href="#" class="nav-item">学术交流</a></li>
+            <li class=""><a href="<?php echo U('ProjectProgress/show');?>" class="nav-item" id="nav-projectprogress">项目进展</a></li>
+            <li class=""><a href="<?php echo U('FilePublish/show');?>" class="nav-item" id="nav-filepublish">发表文章</a></li>
+            <li class=""><a href="<?php echo U('AcademicComunication/show');?>" class="nav-item" id="nav-academiccomunication">学术交流</a></li>
         </ul>
     </div>
 </nav>
