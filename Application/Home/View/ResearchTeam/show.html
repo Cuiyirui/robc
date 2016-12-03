@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="__PUBLIC__/pics/logo.jpg" type="image/x-ico">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>首页</title>
+    <!-- Bootstrap -->
+    <link href="__PUBLIC__/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="__PUBLIC__/jquery/jquery-1.11.3.min.js"></script>
+    <!-- 自己的js和css -->
+    <script src="__PUBLIC__/myjs/ResearchTeam/showdetail.js"></script>
+    <link href="__PUBLIC__/mycss/ResearchTeam/show.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <!-- 包含头部显示文件 -->
+            <include file="./Application/Home/View/header.html" />
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                <a class="list-group-item title team">主要负责团队</a>
+                                <a class="list-group-item items2 member">吴忠道</a>
+                            </ul>
+                            <ul class="list-group">
+                                <li class="list-group-item title">参与团队</li>
+                                <a class="list-group-item items1 team">团队A</a>
+                                <a class="list-group-item items2 member">吴忠道</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="panel panel-default">
+                        <div class="panel-body" id="detail-content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- 包含尾部显示文件 -->
+            <include file="./Application/Home/View/footer.html" />
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</body>
+
+</html>

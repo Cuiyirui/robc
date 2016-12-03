@@ -1,0 +1,36 @@
+#logo{
+	width: 170px;
+}
+#head-text{
+	font-size:20px;
+	/*color: #31708f;*/
+	color: #3c763d;
+	font-weight: 900;
+}
+#sub-head-text{
+	font-size:15px;
+	/*color: #31708f;*/
+	color: #3c763d;
+	font-weight: 600;
+}
+#search-btn{
+	pointer-events:auto !important;
+	cursor: pointer;
+}
+#nav{
+	/*background-color: #31708f !important;*/
+	background-color: #3c763d;
+	border-radius: 8px;
+}
+#nav-content{
+	padding-left: 70px;
+}
+.nav-item{
+	font-size: 18px;
+	color: #fff !important;
+	border-radius: 8px;
+}
+.nav-active{
+	/*background-color: #3fa0f3 !important;*/
+	background-color: #68ab69 !important;
+}

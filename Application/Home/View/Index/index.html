@@ -13,52 +13,16 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="__PUBLIC__/jquery/jquery-1.11.3.min.js"></script>
     <!-- 自己的js和css -->
-    <!-- <script src="__PUBLIC__/myjs/"></script> -->
-    <link href="__PUBLIC__/mycss/index.css" rel="stylesheet">
+    <script src="__PUBLIC__/myjs/Index/index.js"></script>
+    <link href="__PUBLIC__/mycss/Index/index.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-            <!-- 头部文字 -->
-            <div class="row">
-                <div class="col-md-2">
-                    <img src="__PUBLIC__/pics/logo.jpg" alt="..." class="img-rounded" id="logo">
-                </div>
-                <div class="col-md-10">
-                    <br/>
-                    <p id="head-text">
-                        国家重点研发计划——重要热带病传播相关的入侵媒介及其病原体的生物学特性研究
-                    </p>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <p id="sub-head-text">
-                                National Research and Development Plan: Research on Biological Characteristics of the Tropical Disease Related Invasion vectors and Pathogens
-                            </p>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group has-success has-feedback">
-                                <input type="text" class="form-control" id="inputSuccess2">
-                                <span class="glyphicon glyphicon-search form-control-feedback" id="search-btn"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 导航条 -->
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container-fluid" id="nav">
-                    <ul class="nav navbar-nav" id="nav-content">
-                        <li class="active "><a href="#" class="nav-item nav-active">首页</a></li>
-                        <li><a href="#" class="nav-item">关于项目</a></li>
-                        <li><a href="#" class="nav-item">研究团队</a></li>
-                        <li><a href="#" class="nav-item">项目进展</a></li>
-                        <li><a href="#" class="nav-item">发表文章</a></li>
-                        <li><a href="#" class="nav-item">学术交流</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <!-- 包含头部显示文件 -->
+            <include file="./Application/Home/View/header.html" />
             <!-- 项目简介 -->
             <div class="row">
                 <div class="col-sm-7 project-introduction">
@@ -193,38 +157,8 @@
                 <!-- /.sidebar -->
             </div>
             <hr>
-            <footer class="footer">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <div class="col-sm-7 project-introduction">
-                            <p><b>相关链接</b></p>
-                            <p><a href="http://zssom.sysu.edu.cn/">中山大学中山医学院</a></p>
-                            <p><a href="http://www.ipd.org.cn/">中国疾病预防控制中心寄生虫病预防控制所</a></p>
-                            <p><a href="http://life.fudan.edu.cn/ ">复旦大学生命科学学院</a></p>
-                            <p><a href="http://www.ipd.org.cn/">南方医科大学公共卫生与热带医学学院</a></p>
-                        </div>
-                        <div class="col-sm-5">
-                            <p><b>资源共享</b></p>
-                            <p><a href="http://www.chinaias.cn/wjPart/index.aspx ">中国外来入侵物种数据库</a></p>
-                            <p><a href="http://www.iucngisd.org/gisd/">全球入侵物种数据库GISD</a></p>
-                            <p><a href="https://www.vectorbase.org/">人类病原体无脊椎动物媒介生物信息资源数据库（VectorBase）</a></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-sm-offset-1">
-                        <div class=" QRcode-reminder">
-                            <p>请关注我们的公众号：</p>
-                        </div>
-                        <!-- <div class="col-sm-4"> -->
-                        <img src="__PUBLIC__/pics/QRcode.png" height="105">
-                        <!-- </div> -->
-                    </div>
-                </div>
-                <div class="col-sm-6 col-sm-offset-3">
-                    <p>Copyright © 2016 <a href="http://www.sysu.edu.cn/2012/cn/index.htm">中山大学</a> &nbsp;&nbsp;&nbsp; 联系我们：
-                        <a href="mailto:wuzhd@mail2.sysu.edu.cn">wuzhd@mail2.sysu.edu.cn</a></p>
-                    <p>地址：中国广州市中山二路74号中山大学北校区（邮政编码：510080）</p>
-                </div>
-            </footer>
+            <!-- 包含尾部显示文件 -->
+            <include file="./Application/Home/View/footer.html" />
         </div>
         <div class="col-md-1"></div>
     </div>
