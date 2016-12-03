@@ -10,5 +10,6 @@ return array(
 	'DB_PORT'   => 3306, // 端口
 	'DB_PREFIX' => '', // 数据库表前缀 
 	'DB_CHARSET'=> 'utf8', // 字符集
-	'URL_MODEL' => 3,
+	// 'URL_MODEL' => 1,
+	'URL_CASE_INSENSITIVE'  =>  true,  
 );

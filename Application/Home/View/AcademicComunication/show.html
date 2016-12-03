@@ -27,17 +27,15 @@
                 <div class="col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <ul class="list-group">
-                                <li class="list-group-item title">2016</li>
-                                <a class="list-group-item items">会议1</a>
-                                <a class="list-group-item items">会议2</a>
-                                <a class="list-group-item items">会议3</a>
-                                <li class="list-group-item title">2015</li>
-                                <a class="list-group-item items">会议1</a>
-                                <a class="list-group-item items">会议2</a>
-                                <a class="list-group-item items">会议3</a>
-                                <a class="list-group-item items">Dapibus ac facilisis in</a>
-                            </ul>
+                            <foreach name="years" key="k" item="vo">
+                                <ul class="list-group">
+                                    <li class="list-group-item title">{$vo.year}</li>
+                                    <php>$conference=$conferences[$vo['year']];</php>
+                                     <foreach name="conference" key="k1" item="vo1">
+                                    <a class="list-group-item items">{$vo1.name}</a>
+                                     </foreach>
+                                </ul>
+                            </foreach>
                         </div>
                     </div>
                 </div>
